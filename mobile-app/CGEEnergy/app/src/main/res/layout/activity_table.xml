@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Table"
+        android:textColor="@color/colorAccentt"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Results for"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:padding="6dp"
+            android:textSize="15sp"
+            android:textColor="@color/purple"
+            android:layout_height="wrap_content"></TextView>
+
+        <TextView
+            android:id="@+id/areaname_text"
+            android:layout_width="wrap_content"
+            android:text="areaname"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingRight="6dp"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:paddingLeft="0dp"
+            android:textSize="15sp"
+            android:textColor="@color/purple"
+            android:layout_height="wrap_content"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text=""
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:paddingRight="6dp"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:paddingLeft="0dp"
+            android:textSize="15sp"
+            android:textColor="@color/purple"
+            android:layout_height="wrap_content"></TextView>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""></TextView>
+
+
+        <!-- ... repeat with all Space/Text .. -->
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+
+    </HorizontalScrollView>
+    <TextView
+        android:id="@+id/source"
+        android:layout_width="wrap_content"
+        android:text="source: entso-e"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:padding="7dp"
+        android:textSize="9sp"
+        android:textColor="@color/purple"
+        android:layout_height="wrap_content"></TextView>
+</LinearLayout>

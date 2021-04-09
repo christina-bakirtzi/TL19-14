@@ -1,0 +1,12 @@
+nav {
+    margin-top: 0;
+    margin-left: 0px;
+    padding-bottom: 70px;
+    margin-bottom: 150px;
+    height: 40px;
+    border: 1px solid #555;
+
+}
+.active {
+    background-color: #4CAF50;
+}

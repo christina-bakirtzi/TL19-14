@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">CGE Energy</string>
+    <string name="selected_item">Selected item:</string>
+    <string name="Year">Year</string>
+    <string name="Month">Month</string>
+    <string name="Day">Day</string>
+    <string name="choose">Choose Table:</string>
+
+
+    <string-array name="array_tables">
+        <item>Actual Total Load</item>
+        <item>Aggregated Generation Per Type</item>
+        <item>Day-Ahead Total Load Forecast</item>
+        <item>Actual Total Load vs Day-Ahead Total Load Forecast</item>
+    </string-array>
+    <string-array name="array_resolutions">
+        <item>PT60M</item>
+        <item>PT30M</item>
+        <item>PT15M</item>
+    </string-array>
+
+</resources>

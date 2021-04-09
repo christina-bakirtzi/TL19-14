@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+        <meta charset="UTF-8">
+        </head>
+        <body>
+</head>
+<body>
+    <script type="text/javascript">
+        var s = localStorage.getItem('data');
+        var s = JSON.parse(localStorage.getItem('data'));
+        document.write('<table>');
+        document.write('<tr><th>YEAR</th><th>DATE TIME</th><th>ACTUAL TOTAL LOAD VALUE</th><th>UPDATE TIME</th></tr>');
+        for(var i=0; i<s.length; i++){
+            var str = '<tr><td>'+s[i]['Year']+'</td>'
+            var str = str +'<td>'+s[i]['DateTimeUTC']+'</td>'
+            var str = str +'<td>'+s[i]['ActualTotalLoadValue']+'</td>'
+            var str = str +'<td>'+s[i]['UpdateTimeUTC']+'</td></tr>'
+            document.write(str);
+        }
+        document.write('</table>');
+    </script>
+</body>
+</html>

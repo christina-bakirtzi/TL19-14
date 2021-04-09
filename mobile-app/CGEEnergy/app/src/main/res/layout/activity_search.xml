@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <LinearLayout
+        android:id="@+id/textslayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DEF2FF"
+            android:padding="5dp"
+            android:text="@string/choose"
+            android:textColor="@color/colorAccentt"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_border"
+            android:paddingLeft="10dp"
+            android:nestedScrollingEnabled="true"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/productiontype_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_border"
+            android:hint="Enter production type(i.e.Solar)"
+            android:inputType="text"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/resolution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DEF2FF"
+            android:paddingLeft="5dp"
+            android:paddingTop="8dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="8dp"
+            android:text="Resolution"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_resolution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="true"
+            android:background="@drawable/spinner_border"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/AreaName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DEF2FF"
+            android:paddingLeft="5dp"
+            android:paddingTop="8dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="8dp"
+            android:text="Area Name"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/areaname_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Area Name (i.e. Greece)"
+            android:background="@drawable/spinner_border"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="25dp"
+            android:text="Search per..."
+            android:background="#DEF2FF"
+            android:paddingLeft="5dp"
+            android:paddingTop="7dp"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DEF2FF"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+
+            <RadioButton
+                android:id="@+id/year_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="radio_button_click"
+                android:text="@string/Year" />
+
+            <RadioButton
+                android:id="@+id/month_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="radio_button_click"
+                android:text="@string/Month" />
+
+            <RadioButton
+                android:id="@+id/day_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="radio_button_click"
+                android:text="@string/Day" />
+
+        </RadioGroup>
+        <EditText
+            android:id="@+id/year_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Year (form YYYY)"
+            android:background="#DEF2FF"
+            android:inputType="text"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/month_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Year &amp; Month (form: YYYY-MM)"
+            android:background="#DEF2FF"
+            android:inputType="text"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/date_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date(form: YYYY-MM-DD)"
+            android:background="#DEF2FF"
+            android:inputType="text"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="100dp"
+            android:background="@color/colorPrimary"
+            android:text="Search" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:background="@color/pink"
+        android:text="Logout" />
+
+
+    <ProgressBar
+        android:id="@+id/loaderout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/graytrans"
+        android:clickable="true"
+        android:translationZ="2dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

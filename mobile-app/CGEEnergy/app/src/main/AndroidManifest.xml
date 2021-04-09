@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cge.cgeenergy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_logo_round"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".TableActivity"></activity>
+        <activity android:name=".ActualYearActivity"></activity>
+        <activity android:name=".ActualMonthActivity"></activity>
+
+        <activity android:name=".AggregatedYearActivity"></activity>
+        <activity android:name=".AggregatedMonthActivity"></activity>
+        <activity android:name=".AggregatedDateActivity"></activity>
+
+        <activity android:name=".DayDateActivity"></activity>
+        <activity android:name=".DayMonthActivity"></activity>
+        <activity android:name=".DayYearActivity"></activity>
+
+        <activity android:name=".AvsFDateActivity"></activity>
+        <activity android:name=".AvsFMonthActivity"></activity>
+        <activity android:name=".AvsFYearActivity"></activity>
+
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

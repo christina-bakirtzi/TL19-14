@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/t7"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black" />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/t8"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black" />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/t9"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black" />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/t10"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black" />
+    <View
+        android:id="@+id/t11v"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/t11"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black" />
+    <View
+        android:id="@+id/t12v"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/t12"
+        android:layout_width="100dp"
+        android:visibility="visible"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black" />
+    <View
+        android:id="@+id/t13v"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/black" />
+    <TextView
+        android:id="@+id/t13"
+        android:layout_width="100dp"
+        android:visibility="visible"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/black" />
+<!--    <View-->
+<!--        android:layout_width="1dp"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@color/black" />-->
+
+
+</LinearLayout>
