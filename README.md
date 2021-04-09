@@ -1,5 +1,6 @@
 # ntua-softeng
 ## SoftEng NTUA 2019-2020 Project
+Project for Software Engineering Class - NTUA 2019-2020
 ### Oμάδα Can't GIT Enough (TL19-14)
 [//]: # (Αλφαβητικά, επώνυμο)
 
