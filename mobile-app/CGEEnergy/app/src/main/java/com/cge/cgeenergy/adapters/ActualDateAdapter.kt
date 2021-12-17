@@ -23,12 +23,6 @@ class ActualDateAdapter(private val myDataset: List<Actual_response_date>) :
 
     // Replace the contents of a view (invoked by the layout manager)
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-//        holder.view.findViewById<TextView>(R.id.t1).text = myDataset[position].source
-//        holder.view.findViewById<TextView>(R.id.t2).text = myDataset[position].dataset
-//        holder.view.findViewById<TextView>(R.id.t3).text = myDataset[position].areaName
-//        holder.view.findViewById<TextView>(R.id.t4).text = myDataset[position].areaTypeCode
-//        holder.view.findViewById<TextView>(R.id.t5).text = myDataset[position].mapCode
-//        holder.view.findViewById<TextView>(R.id.t6).text = myDataset[position].resolutionCode
         holder.view.findViewById<TextView>(R.id.t7).text = myDataset[position].year
         holder.view.findViewById<TextView>(R.id.t8).text = myDataset[position].month
         holder.view.findViewById<TextView>(R.id.t9).text = myDataset[position].day
