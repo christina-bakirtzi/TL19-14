@@ -4,25 +4,10 @@ import com.cge.cgeenergy.models.*
 import retrofit2.Call
 import retrofit2.http.*
 
-//interface Api {
-//
-//    @GET("Login")
-//    fun login(@Query("username") username: String, @Query("password") password: String): Call<List<LoginResponse>>
-//
-//
-//}
-//interface Api {
-////
-
-////}
 interface Api {
-//    @POST("Login")
-//    fun login(@Header("Authorization") authorization: String): Call<LoginResponse>
     @POST("Login")
     @FormUrlEncoded
     fun login(@Field("username") username: String, @Field("password") password: String): Call<LoginResponse>
-
-
     @GET("ActualTotalLoad/{areaName}/{resolution}/{datetype}/{date}")
     fun getactualtotalloadyear(@Header("X-OBSERVATORY-AUTH") token:String,@Path("areaName") areaName: String, @Path("resolution") resolution: String, @Path("datetype") datetype: String, @Path("date") date: String):Call<List<Actual_response_year>>
     @GET("ActualTotalLoad/{areaName}/{resolution}/{datetype}/{date}")
